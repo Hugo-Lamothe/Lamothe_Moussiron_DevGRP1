@@ -44,3 +44,250 @@ Binding(ALT+SHIFT+R,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.resources 4 1 2022-11-10 11:44:21.697
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Lamothe_Moussiron_DevGRP1/.project)[368]: java.lang.Exception: File not found: /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/.project.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:652)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.m2e.core.internal.builder.MavenNature.configure(MavenNature.java:31)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.addMavenNature(ProjectConfigurationManager.java:516)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableBasicMavenNature(ProjectConfigurationManager.java:505)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.run(ProjectConfigurationManager.java:494)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:29)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableMavenNature(ProjectConfigurationManager.java:491)
+	at org.eclipse.m2e.core.ui.internal.actions.EnableNatureAction$1.run(EnableNatureAction.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2022-11-10 11:44:21.700
+!MESSAGE File not found: /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/.project.
+!STACK 0
+java.lang.Exception: File not found: /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/.project.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.descriptionChanged(FileSystemResourceManager.java:382)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.internalWrite(FileSystemResourceManager.java:652)
+	at org.eclipse.core.internal.resources.Project.writeDescription(Project.java:1421)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1313)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.m2e.core.internal.builder.MavenNature.configure(MavenNature.java:31)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.addMavenNature(ProjectConfigurationManager.java:516)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableBasicMavenNature(ProjectConfigurationManager.java:505)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.run(ProjectConfigurationManager.java:494)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:29)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableMavenNature(ProjectConfigurationManager.java:491)
+	at org.eclipse.m2e.core.ui.internal.actions.EnableNatureAction$1.run(EnableNatureAction.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 2 2022-11-10 11:44:21.704
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while setting project description.
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1323)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.m2e.core.internal.builder.MavenNature.configure(MavenNature.java:31)
+	at org.eclipse.core.internal.resources.NatureManager$1.run(NatureManager.java:150)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.NatureManager.configureNature(NatureManager.java:166)
+	at org.eclipse.core.internal.resources.NatureManager.configureNatures(NatureManager.java:212)
+	at org.eclipse.core.internal.resources.Project.basicSetDescription(Project.java:111)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1309)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.addMavenNature(ProjectConfigurationManager.java:516)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableBasicMavenNature(ProjectConfigurationManager.java:505)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.run(ProjectConfigurationManager.java:494)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:29)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableMavenNature(ProjectConfigurationManager.java:491)
+	at org.eclipse.m2e.core.ui.internal.actions.EnableNatureAction$1.run(EnableNatureAction.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: The project description file (.project) for 'Lamothe_Moussiron_DevGRP1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 568 2022-11-10 11:44:21.706
+!MESSAGE Problems encountered while setting project description.
+!SUBENTRY 2 org.eclipse.core.resources 2 234 2022-11-10 11:44:21.706
+!MESSAGE The project description file (.project) for 'Lamothe_Moussiron_DevGRP1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-11-10 11:44:21.706
+!MESSAGE The project description file (.project) for 'Lamothe_Moussiron_DevGRP1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-11-10 11:44:21.718
+!MESSAGE Problems encountered while setting project description.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while setting project description.
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1323)
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.addMavenNature(ProjectConfigurationManager.java:516)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableBasicMavenNature(ProjectConfigurationManager.java:505)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.run(ProjectConfigurationManager.java:494)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:29)
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:1)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205)
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableMavenNature(ProjectConfigurationManager.java:491)
+	at org.eclipse.m2e.core.ui.internal.actions.EnableNatureAction$1.run(EnableNatureAction.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Problems encountered while setting project description.
+Contains: The project description file (.project) for 'Lamothe_Moussiron_DevGRP1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+Contains: The project description file (.project) for 'Lamothe_Moussiron_DevGRP1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 568 2022-11-10 11:44:21.718
+!MESSAGE Problems encountered while setting project description.
+!SUBENTRY 2 org.eclipse.core.resources 2 568 2022-11-10 11:44:21.718
+!MESSAGE Problems encountered while setting project description.
+!SUBENTRY 3 org.eclipse.core.resources 2 234 2022-11-10 11:44:21.718
+!MESSAGE The project description file (.project) for 'Lamothe_Moussiron_DevGRP1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 2 org.eclipse.core.resources 2 234 2022-11-10 11:44:21.718
+!MESSAGE The project description file (.project) for 'Lamothe_Moussiron_DevGRP1' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:44:23.827
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:44:23.831
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:44:24.919
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:44:24.922
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:45:14.984
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:45:14.988
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:45:36.079
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:45:36.084
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:45:37.340
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:45:37.345
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:47:09.868
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:47:09.871
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:47:21.872
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:47:21.876
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:47:25.804
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:47:25.807
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:48:30.748
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:48:30.749
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:48:54.216
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:48:54.217
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:14.748
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:14.752
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:15.832
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:15.834
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:16.916
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:16.919
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:18.802
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:18.804
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:20.632
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:49:20.635
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:07.189
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:07.191
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:08.677
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:08.680
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:18.905
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:18.907
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:27.271
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:51:27.274
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:52:09.876
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-11-10 11:52:09.878
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
