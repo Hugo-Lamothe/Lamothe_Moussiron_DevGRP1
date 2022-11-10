@@ -1,1 +1,103 @@
 2022-11-10 11:18:37,459 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-10 11:44:21,717 [Worker-40: Enabling Maven Dependency Management] ERROR o.e.m.c.u.i.a.EnableNatureAction - Problems encountered while setting project description.
+org.eclipse.core.runtime.CoreException: Problems encountered while setting project description.
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1323) ~[na:na]
+	at org.eclipse.core.internal.resources.Project.setDescription(Project.java:1336) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.addMavenNature(ProjectConfigurationManager.java:516) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableBasicMavenNature(ProjectConfigurationManager.java:505) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.run(ProjectConfigurationManager.java:494) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:29) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.AbstractRunnable.call(AbstractRunnable.java:1) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:350) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:262) ~[na:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:205) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.enableMavenNature(ProjectConfigurationManager.java:491) ~[na:na]
+	at org.eclipse.m2e.core.ui.internal.actions.EnableNatureAction$1.run(EnableNatureAction.java:140) ~[org.eclipse.m2e.core.ui_2.0.0.20220726-0935.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[org.eclipse.core.jobs_3.13.100.v20220817-1539.jar:na]
+2022-11-10 11:44:23,389 [Worker-37: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Lamothe_Moussiron_DevGRP1:Lamothe_Moussiron_DevGRP1:0.0.1-SNAPSHOT @ /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/pom.xml.
+2022-11-10 11:44:23,827 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:44:23,828 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:44:23,831 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:44:23,832 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:44:24,918 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:44:24,919 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:44:24,921 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:44:24,922 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:45:14,478 [Worker-24: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Lamothe_Moussiron_DevGRP1:Lamothe_Moussiron_DevGRP1:0.0.1-SNAPSHOT @ /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/pom.xml.
+2022-11-10 11:45:14,983 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:45:14,984 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:45:14,987 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:45:14,988 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:45:35,219 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-11-10 11:45:35,368 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: Lamothe_Moussiron_DevGRP1:Lamothe_Moussiron_DevGRP1:0.0.1-SNAPSHOT @ /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/pom.xml.
+2022-11-10 11:45:35,713 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Lamothe_Moussiron_DevGRP1/src
+2022-11-10 11:45:35,714 [Worker-37: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /Lamothe_Moussiron_DevGRP1/src/test/java because it overlaps with /Lamothe_Moussiron_DevGRP1/src
+2022-11-10 11:45:35,870 [Worker-37: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2022-11-10 11:45:36,079 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:45:36,080 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:45:36,084 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:45:36,084 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:45:37,339 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:45:37,340 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:45:37,344 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:45:37,345 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:47:09,868 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:47:09,868 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:47:09,871 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:47:09,872 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:47:21,872 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:47:21,873 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:47:21,875 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:47:21,876 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:47:25,804 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:47:25,805 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:47:25,806 [Worker-37: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:47:25,807 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:48:30,747 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:48:30,748 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:48:30,749 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:48:30,749 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:48:54,215 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:48:54,216 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:48:54,217 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:48:54,217 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:49:14,748 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:14,748 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:49:14,752 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:14,753 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:49:15,832 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:15,832 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:49:15,834 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:15,834 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:49:16,915 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:16,916 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:49:16,919 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:16,919 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:49:18,802 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:18,802 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:49:18,804 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:18,804 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:49:20,632 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:20,632 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:49:20,634 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:49:20,635 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:51:07,188 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:07,189 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:51:07,190 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:07,191 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:51:08,676 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:08,677 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:51:08,680 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:08,680 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:51:18,904 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:18,905 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:51:18,907 [Worker-24: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:18,907 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:51:27,271 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:27,272 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:51:27,274 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:51:27,274 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
+2022-11-10 11:52:09,876 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:52:09,877 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/main/resources
+2022-11-10 11:52:09,878 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:52:09,878 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/nathan/Lamothe_Moussiron_DevGRP1/Lamothe_Moussiron_DevGRP1/src/test/resources
